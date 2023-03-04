@@ -1,0 +1,3 @@
+-> Every company uses multiple tech stacks
+-> Tech stack should not matter for developers (Concepts are same), ,so take the opportunity and Learn it.
+
