@@ -16,7 +16,8 @@ console.log(null == false);
 //In JavaScript null is "nothing". It is supposed to be something that doesn't exist. Unfortunately, in JavaScript, the data type of null is an object. You can consider it a bug in JavaScript that typeof null is an object.
 /**
  * y -> is a boolean -> ToNumber -> 0
- * null == 0
+ * null == 0 -> "[object object]" == 0
+ * NaN == 0
  * false
  */
 
