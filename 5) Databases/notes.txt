@@ -1,0 +1,8 @@
+/*
+File based system Ex school university system
+-> class teacher -> maintaing record of their classes
+-> Incharge asked the top 10 students of each class
+
+ Data Redundancy - copying the same info
+ Data inconsistency -> Student came to update his no - class teacher updates his sheet 
+ */

@@ -1,0 +1,27 @@
+class -> object 
+Database schema -> Database instance
+
+Axioms are the tools via which you can detect the poor DB design.
+
+DB keys - set of columns which helps  to uniquely identify the rows.
+
+primary key - e_id is abetter choice over e-phon no as it can be null too. 
+
+Normalisation is nothing but a technique via which you can make your database more clean, more scalable, queries more efficient.
+
+Normal forms (1nf,2nf,...) -> helps us to understand what level of redundancy we have and also gives us the technique to reduce it.
+
+
+2nf form -> 2nd table:
+                      1 emp -> multiple projects
+                      1 project -> can have multiple employees
+ what all employess are involved in project 1?
+    -> query the "employe-proj-join" table (select all the emp_id having p_id as 1)
+    -> do the join with the emp_id received from the above table with employee table.
+
+Join table has multiple foreign keys from the other tables
+
+
+part3 -> In Comments table commentable type could be enum(comment, answer)
+         if commentable_type is "answer" then commentable_id is "answer" table id PK
+         if commentable_type is "comment" then commentable_id is "comment" table id PK
