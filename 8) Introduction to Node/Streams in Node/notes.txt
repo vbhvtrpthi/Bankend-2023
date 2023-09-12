@@ -1,0 +1,15 @@
+-> enbale es6 moduling using package.json
+
+   "type":"module"
+
+-> For getting the file path :-
+   "__dirname" is not supported in ES6 moduling, what is supported is "import.meta.url"
+
+-> top level module in js
+
+-> . - current folder
+   .. - one folder back
+
+-> In nodejs, "console.log()" is internally implemented as "process.stdout.write"
+
+-> Problm stmt - Transform all the text while reading to uppercase
