@@ -3,4 +3,4 @@ setTimeout(function exec() {
     console.log("Running after sometime")
 }, 4000); //After 4000 millisecond it is gonna run the exec file
 
-nameofthefunction()
+// nameofthefunction()

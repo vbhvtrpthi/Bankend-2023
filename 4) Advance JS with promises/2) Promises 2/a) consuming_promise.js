@@ -45,16 +45,18 @@ p.then(
 )
 
 //Promise object has two arrays, onfulfilled/ onrejected whatever handlers we register are stored into that array, and executed only after it get's green signal from the event loop.
-// .then is just the registerer which registers the fulfillmentHandler or rejectionHandler to the promise arrays onfulfilled/ onrejected. 
+// .then is just the registrer which registers the fulfillmentHandler or rejectionHandler to the promise arrays onfulfilled/ onrejected. 
 // these functions will be executed only when the promise state transitions from pending (fulfillmentHandler, rejectionHandler);
 
 //-----------------------------------------------------------------------------------------
+
 //we can register multiple fulfillmentHandler and rejectionHandler using .then in onfulfilled and onrejected array
 
 
 // function getRandomInt(max) {
 //     return Math.floor(Math.random() * max);
 // }
+
 // function createPromiseWithTimeout() {
 //     return new Promise(function executor(resolve, reject) {
 //         console.log("Entering the executor callback in the promise constructor");
@@ -71,6 +73,7 @@ p.then(
 //         console.log("Exitting the executor callback in the promise constructor");
 //     });
 // }
+
 // console.log("Starting....");
 // const p = createPromiseWithTimeout();
 // console.log("We are now waiting for the promise to complete");
@@ -104,7 +107,10 @@ p.then(
 
 // console.log("Ending......");
 
+
+
 //-----------------------------------------------------------------------------------------
+
 
 // function getRandomInt(max) {
 //     return Math.floor(Math.random() * max);

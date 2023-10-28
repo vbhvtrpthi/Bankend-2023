@@ -1,5 +1,5 @@
 //JS is by default synchronous in nature and is single threaded.
-//After completion of one line in respect to whatever time it takes,  it'll move to next line for execution.
+//After completion of one line in respect to whatever time it takes, post that only will move to next line for execution.
 
 console.log("Hi we are starting");
 

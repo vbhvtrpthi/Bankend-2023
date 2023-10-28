@@ -38,6 +38,10 @@ arr.sort(); // it sorts the given array // [expectation] -> this might arrange e
  * [B, BA, BAA, BAAA, BB, BC, BD .....]
  */
 console.log(arr); 
+// [1, 10, 100, 1000,
+// 11, 12,  13,   14,
+//  2,  3,   9]
+
 
 //----------------------------------------------------------------------------------------------------
 

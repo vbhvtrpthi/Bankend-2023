@@ -5,6 +5,7 @@
 
 function fetchNextElement(array) {
     let idx = 0;
+
     function next() {
       if (idx == array.length) {
         return { value: undefined, done: true };
@@ -13,6 +14,7 @@ function fetchNextElement(array) {
       idx++;
       return { value: nextElement, done: false };
     }
+    
     return { next };
   }
   
@@ -25,6 +27,7 @@ function fetchNextElement(array) {
   console.log(automaticFetcher.next());
   
 // Arrays in js have (Symbol.iterator) check in web console
+
 // let arr = ["1","abc",2 ,3]
 // iterator = arr[Symbol.iterator]();
 // iterator.next()

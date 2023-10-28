@@ -2,7 +2,7 @@
 
 An operating system is said to be Unix-based or Unix-like if it's designed to function and behave similar to the Unix operating system. Examples of proprietary Unix-like operating systems include AIX, HP-UX, Solaris, and Tru64. Examples of open-source Unix-like operating systems are those based on the Linux kernel and BSD derivatives, such as FreeBSD and OpenBSD. Linux is not Unix, but it is a Unix-like operating system. Linux system is derived from Unix and it is a continuation of the basis of Unix design. Linux distributions are the most famous and healthiest example of direct Unix derivatives. 
 
-Ex- MacOS as well as linux is Unix-like operating system but they can opt for some fundamental architectural difference (package mgr in linux and mac are differenet.)
+Ex- MacOS as well as linux is Unix-like operating system but they can opt for some fundamental architectural difference (package mgr in linux and mac are different.)
 
 **Qs. Why Linux?**
 1. It’s free

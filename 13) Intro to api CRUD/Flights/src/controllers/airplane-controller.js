@@ -32,16 +32,16 @@ async function getAllAirplane(req, res) {
     const airplane = await AirplaneService.getAllAirplane();
     return res.status(StatusCodes.CREATED).json({
       success: "true",
-      message: "Successfully created an airplane",
+      message: "Successfully Fetched all the airplane",
       data:airplane,
       error: {},
     });
   } catch (error) {
     return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({
-      success: "true",
-      message: "Successfully created an airplane",
-      data:airplane,
-      error: error,
+      success: false,
+      message:"Failed to fetch an airplane",
+      data:{},
+      error:error
     });
   }
 }

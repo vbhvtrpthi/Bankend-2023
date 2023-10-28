@@ -26,10 +26,10 @@ const linearSearch = (arr, x) => {
   };
   
   // Exporting the module in Common JS Syntax
-  // module.exports = {
-  //   linearSearch: linearSearch,
-  //   binarySearch: binarySearch
-  // };
+  module.exports = {
+    linearSearch: linearSearch,
+    binarySearch: binarySearch
+  };
   
 // shorthand syntax when the key value pair is same
 //   module.exports = {linearSearch, binarySearch};

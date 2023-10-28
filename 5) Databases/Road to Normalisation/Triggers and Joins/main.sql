@@ -67,7 +67,7 @@ select orderNumber, productCode from orderDetails;
 /* ------------------------------------------------------------------------------------------------------------------------- */
 
 /*
-Can create views from the sigle table or joins of multile table it is just a view whcih can be used to query and is used for security reasons.
+Can create views from the single table or joins of multiple table it is just a view whcih can be used to query and is used for security reasons.
 */
 
 CREATE OR REPLACE VIEW OrderProductView AS 

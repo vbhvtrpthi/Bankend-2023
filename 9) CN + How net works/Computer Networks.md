@@ -77,6 +77,7 @@ Now comes the interesting part, WHY and HOW? Let me first explain WHY and then H
 - To solve this problem we introduce two terminologies Public IP address and Private IP address.
 - Public IP address and Private IP address :
 - Any IP address in this range is the private IP address and the remaining are public IP addresses.
+- [Private and public IP addresses](https://www.geeksforgeeks.org/difference-between-private-and-public-ip-addresses/)
 - Private IPs are free of cost
 - Public IPs are costly (ISPs like Jio, Airtel purchase public IPs)
 
@@ -84,7 +85,7 @@ Now comes the interesting part, WHY and HOW? Let me first explain WHY and then H
 ## Example :
 Here we have two routers Jio and Airtel both are connecting private networks and public networks. Remember we do not talk directly to Google or Amazon server or any public device directly, we talk via our ISP . we talk to ISP router and ISP router talk to the Internet. All ISP or public routers have public IP addresses that they purchase and all have different public IP addresses, they can’t be the same, as in fig. Airtel public IP is 43.5.6.1 and Jio public IP is 53.9.7.1. Now under each public IP address, any private IP address range can be used (private IP range listed above).  That’s why host A and host B in fig. can have the same private IP address. so within one network for ex-Airtel, all private IPs must be different but for hosts, on two different networks ex-Airtel and Jio hosts may have the same private IP address this way we reuse the private IPs.
 
-<img src="./Screenshots/CN.png"  width="520" height="350">
+<img src="./How Internet works/Screenshots/CN.png"  width="520" height="350">
 
 ## Conclusion :
 All public IPs assigned to Routers of ISPs or Routers connecting to Internet are unique. but private IPs of two hosts can be the same if both are connected to different public networks. So the combination of public and private IP identifies your device uniquely. One interesting activity you can do, take two or more phones to connect all the phones with the hotspot of anyone’s phone. now on all the phones type on Google “what is my IP address” it will give you the public IP to which your phone is connected, (not the private IP), you will see all of your phones have the same public IP (because all of you are connected to the same public router) and to see your private IP  go to setting and then Wi-Fi and then Wi-Fi setting. You will see your private IP address ( for your mobile model please search on google how to find private IP). One more thing you will note here is that all of your private IPs will differ in a uniform manner. Because all of you have the same public network your private IP can’t be the same. 

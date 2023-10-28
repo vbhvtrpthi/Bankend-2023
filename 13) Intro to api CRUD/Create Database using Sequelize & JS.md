@@ -150,7 +150,7 @@ Programmatically u will be interacting with models in JS but when u query a mode
 
 # Data Types of Sequelize:
 
-- [Data Types](https://sequelize.org/docs/v7/other-topics/other-data-types/)
+- [Data Types](https://sequelize.org/docs/v7/models/data-types/)
 
 </br>
 

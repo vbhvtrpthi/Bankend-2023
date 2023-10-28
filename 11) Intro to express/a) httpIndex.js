@@ -29,7 +29,12 @@ const server = http.createServer(function listener(request, response) {
     // if we make a request on `/home` path/route this if() block will be executed
     console.log("Request Method:", request.method);
     /* 
-    The first time response.write() is called, it will send the buffered header information and the first chunk of the body to the client. The second time response.write() is called, Node.js assumes data will be streamed, and sends the new data separately. That is, the response is buffered up to the first chunk of the body. Returns true if the entire data was flushed successfully to the kernel buffer. Returns false if all or part of the data was queued in user memory. 'drain' will be emitted when the buffer is free again. 
+    The first time response.write() is called, it will send the buffered header information and the first chunk of the body to the client.
+    The second time response.write() is called, Node.js assumes data will be streamed, and sends the new data separately.
+    That is, the response is buffered up to the first chunk of the body. 
+    Returns true if the entire data was flushed successfully to the kernel buffer.
+    Returns false if all or part of the data was queued in user memory. 'drain' will be emitted when the buffer is free again.
+     
     This sends a chunk of the response body. This method may be called multiple times to provide successive parts of the body.
     */
     response.write("Hi Vaibhav!\n");

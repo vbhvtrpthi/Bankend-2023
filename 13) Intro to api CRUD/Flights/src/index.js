@@ -1,4 +1,6 @@
-const { ServerConfig, Logger } = require("./config"); // If u are requiring from index.js file u don't need to specifically mention the file name i.e. index.js, it will automatically pick the index.js file
+// If u are requiring from index.js file u don't need to 
+//specifically mention the file name i.e. index.js, it will automatically pick the index.js file
+const { ServerConfig, Logger } = require("./config"); 
 const { AboutController, HomeController } = require("./controllers");
 const express = require("express");
 const apiRoutes = require("./routes");
@@ -12,9 +14,11 @@ if there is a `req.body` please read it like a JSON
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 /*
-a. express.json() is a method inbuilt in express to recognize the incoming Request Object as a JSON Object. This method is called as a middleware in your application using the code: app.use(express.json());
+a. express.json() is a method inbuilt in express to recognize the incoming Request Object as a JSON Object. 
+   This method is called as a middleware in your application using the code: app.use(express.json());
 
-b. express.urlencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. This method is called as a middleware in your application using the code: app.use(express.urlencoded());
+b. express.urlencoded() is a method inbuilt in express to recognize the incoming Request Object as strings or arrays. 
+   This method is called as a middleware in your application using the code: app.use(express.urlencoded());
 */
 
 /*
