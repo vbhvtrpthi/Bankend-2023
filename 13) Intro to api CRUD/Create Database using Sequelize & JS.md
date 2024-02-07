@@ -82,7 +82,7 @@ npx sequelize  model:generate --name Airplane --attributes modelNumber:string,ca
 
 In order to actually create a table/model inside the DB.
 
-Step 1: If the databse written in config file is already present start from Step 2, else first write Inside the terminal, inside the `/src` folder write the following command:
+Step 1: If the databse written in config file is already present in the DB start from Step 2, else first create it using below command.
 
 ```
  npx sequelize db:create
