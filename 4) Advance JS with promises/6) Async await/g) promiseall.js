@@ -43,7 +43,8 @@ function download(url, time) {
   promises rejects, with this first rejection reason.
   
   > Parallelly start all the 3 downloads together and wrap all of the promises
-  inside the Promise.all().This Promise.all() wraps all of the promises into a bigger promise in which u can have .then() and .then() of Promise.all() gives u a fulfillment handler.This fulfillment handler gives 
+  inside the Promise.all().This Promise.all() wraps all of the promises into a bigger promise in which u can have
+   .then() and .then() of Promise.all() gives u a fulfillment handler.This fulfillment handler gives 
   u a values property that is an array of all the promises that u actually started
   
   > The bigger promise of Promise.all() is resolved when all of the promises p1,p2,p3 are fulfilled
@@ -66,7 +67,6 @@ function download(url, time) {
   promises as input and returns a single Promise. This 
   returned promise settles with the eventual state of the first
   promise that settles.
-  
   */
 
 

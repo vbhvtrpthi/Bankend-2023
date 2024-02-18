@@ -3,7 +3,8 @@
 //     console.log("executed");
 // }, 3000);
 
-//But in promises, what will happen after the asynchronous code is completed, we can mention it later, no need of defining it right there
+//But in promises, what will happen after the asynchronous code is completed, we can mention it later, 
+//no need of defining it right there
 //with promise object, there is a function called "then" 
 
 //-----------------------------------------
@@ -44,7 +45,8 @@ p.then(
     }
 )
 
-//Promise object has two arrays, onfulfilled/ onrejected whatever handlers we register are stored into that array, and executed only after it get's green signal from the event loop.
+//Promise object has two arrays, onfulfilled/ onrejected whatever handlers we register are stored into that array, 
+// and executed only after it get's green signal from the event loop.
 // .then is just the registrer which registers the fulfillmentHandler or rejectionHandler to the promise arrays onfulfilled/ onrejected. 
 // these functions will be executed only when the promise state transitions from pending (fulfillmentHandler, rejectionHandler);
 

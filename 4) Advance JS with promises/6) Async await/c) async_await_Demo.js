@@ -45,7 +45,8 @@ function uploadData(file, url) {
 //async function always returns a promise and that promised will be resolved when we hit return statement(uploadResponse in this case)  
 async function steps() {
     console.log("starting steps");
-    const downloadedData = await download("www.xyz.com"); // as soon as download promise is resolved, step will go in microtask queue and wait just like generator function    
+    const downloadedData = await download("www.xyz.com"); // as soon as download promise is resolved, 
+    //step will go in microtask queue and wait just like generator function    
     console.log("data downloaded is", downloadedData);
     const fileWritten = await writeFile(downloadedData);
     console.log("file written is", fileWritten);

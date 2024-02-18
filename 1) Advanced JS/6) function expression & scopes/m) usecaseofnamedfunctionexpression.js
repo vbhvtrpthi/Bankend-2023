@@ -4,7 +4,8 @@ function fun(fn) {
     fn();
 }
 
-//--> problem with code readability -> usecase of what this function is doing should be identified directly with the name not after reading the code.
+//--> problem with code readability -> usecase of what this function is doing should be identified directly with the 
+//name not after reading the code.
 
 //Passing a function into function.
 fun(function () {

@@ -66,4 +66,21 @@ Lets take a look inside the `src` folder
 - to create tables - `sequelize model:generate --name` , flag --name assigns a table name
 - Migrate things, see the docs
 
-- come and implement till 01:49, post that continue watching video
+
+Sequelize is an Object-Relational Mapping (ORM) library for Node.js. In simple terms, it's a tool that helps developers interact with relational databases using JavaScript objects and functions rather than writing SQL queries directly.
+
+Here's what Sequelize does:
+
+1. **Database Interaction Simplified:** Sequelize abstracts away the complexity of dealing with databases by allowing developers to work with JavaScript objects and methods to perform database operations like querying, inserting, updating, and deleting data.
+
+2. **Model-Driven Approach:** It enables developers to define models in JavaScript that represent database tables. These models define the structure of the data and the relationships between tables.
+
+3. **CRUD Operations:** Sequelize provides easy-to-use methods to perform CRUD (Create, Read, Update, Delete) operations on the database without writing raw SQL queries.
+
+4. **Migration and Synchronization:** It offers tools to create and manage database schemas, allowing developers to create, update, or delete database tables and columns through code.
+
+5. **Query Building:** Sequelize helps in constructing complex queries using JavaScript methods and operators, which it translates into appropriate SQL queries.
+
+6. **Cross-Database Compatibility:** It supports various relational databases like PostgreSQL, MySQL, SQLite, and MSSQL, making it easy to switch between different databases without changing much of the code.
+
+In essence, Sequelize simplifies database interactions in Node.js applications by providing an abstraction layer that allows developers to work with databases using JavaScript methods and models, enhancing productivity and reducing the need for writing repetitive SQL queries.

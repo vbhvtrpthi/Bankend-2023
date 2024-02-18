@@ -1,6 +1,8 @@
 //// https://262.ecma-international.org/10.0/#sec-promise-objects
-//Promises are native to js, if something is native to js, handling of that part is synchronous in nature, and hence creation of promise is synchronous in nature.
-//Resolve and reject will only take first value as their parameter, no matter how many times you call after calling it for the first time.
+//Promises are native to js, if something is native to js, handling of that part is synchronous in nature, 
+//and hence creation of promise is synchronous in nature.
+//Resolve and reject will only take first value as their parameter, 
+//no matter how many times you call after calling it for the first time.
 
 //run in web console
 // function getRandomInt(max) {

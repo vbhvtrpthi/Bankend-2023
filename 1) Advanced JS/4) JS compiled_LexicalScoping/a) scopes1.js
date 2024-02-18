@@ -31,3 +31,5 @@ console.log(teacher); //Sanket
 
 
 //JS code executes in 2 phases -> Parsing & Execution
+//So, while JavaScript is primarily interpreted, modern engines use a mix of interpretation and c
+//ompilation techniques to improve performance

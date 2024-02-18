@@ -10,7 +10,8 @@ function DO(task) {
   console.log("end");
 
 //----------------------------------------------------------------------
-// Closure will keep hold of all those variables which the function is using inside it, no matter if it's declared inside that scope or outside.
+// Closure will keep hold of all those variables which the function is using inside it,
+// no matter if it's declared inside that scope or outside.
 
 // function outer(b){
 //   function inner(){

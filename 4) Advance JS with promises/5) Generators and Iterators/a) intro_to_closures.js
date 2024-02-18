@@ -1,5 +1,6 @@
 //functions are first class citizens of JS.  
-//closures -> remembers all those variables that are getting accessed inside your function, whose scope might be in the function or outside of the function, it remembers memory location of all those variables.
+//closures -> remembers all those variables that are getting accessed inside your function,
+// whose scope might be in the function or outside of the function, it remembers memory location of all those variables.
 
 // innerProcess function will remember all those variables
 

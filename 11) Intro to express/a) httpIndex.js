@@ -3,7 +3,8 @@
 
 - NodeJS provides us with a basic setup using which we can actually set up a basic HTTP server without using any 3rd party libraries.
 
-- HTTP is an internal module that is already provided to us by NodeJS and many 3rd parties external libraries depend on these HTTP modules.
+- HTTP is an internal module that is already provided to us by NodeJS and many 3rd parties external libraries depend on 
+  these HTTP modules.
 */
 const http = require("http"); // Internal module to set up our own HTTP server
 
@@ -29,7 +30,8 @@ const server = http.createServer(function listener(request, response) {
     // if we make a request on `/home` path/route this if() block will be executed
     console.log("Request Method:", request.method);
     /* 
-    The first time response.write() is called, it will send the buffered header information and the first chunk of the body to the client.
+    The first time response.write() is called, it will send the buffered header information and the first chunk of the body 
+    to the client.
     The second time response.write() is called, Node.js assumes data will be streamed, and sends the new data separately.
     That is, the response is buffered up to the first chunk of the body. 
     Returns true if the entire data was flushed successfully to the kernel buffer.

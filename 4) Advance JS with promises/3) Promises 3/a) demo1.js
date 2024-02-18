@@ -1,6 +1,7 @@
 //timer app, ping pong game, phaserjs -> prateek narang resume, space shooter, tic tac toe
 //promise.then just registers the handler in promise object onfullfillment/onrejected array,
-//when the promise state changes based upon resolve()/reject() function then only the handlers from these arrays (onfullfillment/onRejection) moves to microtask queue.
+//when the promise state changes based upon resolve()/reject() function then only the handlers from these arrays
+// (onfullfillment/onRejection) moves to microtask queue.
 //Here in the below code handler A moves from onfulfillment array to microtask queue once resolve(data) is called.
 
 function fetchData(url) {

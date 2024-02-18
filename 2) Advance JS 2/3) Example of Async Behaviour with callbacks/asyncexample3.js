@@ -19,4 +19,5 @@ console.log("end")
 //JS doesn't know about console, as it is not a core feature of js? it comes from runtime
 //https://nodejs.org/api/process.html#processstdout
 
-//practical use case -> let's say you are preparing quiz app and for every question of quiz you want to give 10 seconds and no refresh allowed, after 10 seconds you want a new page to be rendered.
+//practical use case -> let's say you are preparing quiz app and for every question of quiz you want to give 10 seconds and 
+//no refresh allowed, after 10 seconds you want a new page to be rendered.

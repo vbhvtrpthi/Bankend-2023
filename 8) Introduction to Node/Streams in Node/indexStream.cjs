@@ -1,8 +1,11 @@
 /*
  
-You want to read a file. But u don’t want to read the whole file at one go. You can read the file in the form of a stream i.e. chunk by chunk you can start reading the file and then write it.
+You want to read a file. But u don’t want to read the whole file at one go. You can read the file in the form of a stream 
+i.e. chunk by chunk you can start reading the file and then write it.
 
-When u are actually reading the file using a readable stream u can actually pipe the stream of data to an output stream using a writable stream. U can actually pipe the content that means whatever flow of content is coming from the read pipeline u are just piping it out to the write pipeline.
+When u are actually reading the file using a readable stream u can actually pipe the stream of data 
+to an output stream using a writable stream. U can actually pipe the content that means whatever flow of content is coming
+from the read pipeline u are just piping it out to the write pipeline.
 
 */
 

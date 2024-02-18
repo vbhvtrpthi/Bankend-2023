@@ -1,4 +1,5 @@
-//In Parsing- JS reads the whole code and starts allocating the variables (not the values) their corresponding scopes (scope manager (SM)).
+//In Parsing- JS reads the whole code and starts allocating the variables (not the values)
+// their corresponding scopes (scope manager (SM)).
 //In parsing phase we only care of formal declaration.
 
 //After parsing phase -> execution phase will start where assigning of values will take place in already defined scope
@@ -8,7 +9,8 @@ function fun() {
     var teacher = "Pulkit"; //Hey SM, is variable teacher already present in scope of fun? NO, so define teacher variable in fun scope
 
     content = "JS"; //it is not a formal declaration, so in parsing phase scope of it will not be allocated.
-    //In execution phase -> Hey Scope of Fun do you have variable content ? No, whent his happens in execution phase, we go one scope out of current scope, Now we'll check variabble content in global scope, there also it's not present
+    //In execution phase -> Hey Scope of Fun do you have variable content ? No, when this happens in execution phase,
+    // we go one scope out of current scope, Now we'll check variable content in global scope, there also it's not present
     //then it'll automatically become global variable during execution phase because of "autoglobals" concept.
 
     console.log(teacher);

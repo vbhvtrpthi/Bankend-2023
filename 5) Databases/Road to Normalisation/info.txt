@@ -5,7 +5,7 @@ Axioms are the tools via which you can detect the poor DB design.
 
 DB keys - set of columns which helps  to uniquely identify the rows.
 
-primary key - e_id is abetter choice over e-phon no as it can be null too. 
+primary key - e_id is better choice over e-phon no as it can be null too. 
 
 Normalisation is nothing but a technique via which you can make your database more clean, more scalable, queries more efficient.
 

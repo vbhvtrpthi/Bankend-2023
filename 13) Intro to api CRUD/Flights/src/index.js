@@ -27,7 +27,8 @@ upcoming routes that are mentioned below it.
 
 */
 
-app.use("/api", apiRoutes); // import apiRoutes from the ./routes folder & whenever somebody gives me an URL that starts with /api I will redirect all the requests to the apiRoutes. | |  Link : http://localhost:3000/api
+app.use("/api", apiRoutes); // import apiRoutes from the ./routes folder & whenever somebody gives me an URL that starts with
+// /api I will redirect all the requests to the apiRoutes. | |  Link : http://localhost:3000/api
 
 app.listen(ServerConfig.PORT, () => {
   console.log(`Server is up and running on PORT: ${ServerConfig.PORT}`);
@@ -50,8 +51,10 @@ separate server or listen on their own ports. Routers use
 all the .get(), .put(), .post(), and .delete() routes that 
 you are now familiar with.
 
-- app.use() -> The app.use() function is used to mount the specified middleware function(s) at the path which is being specified. It is mostly used to set up middleware for your application. 
-We know how to use middlewares inside the app.get() / app.post(), but instead of adding the middlewares over there we will register/add the middlewares inside the app.use().
+- app.use() -> The app.use() function is used to mount the specified middleware function(s) at the path which is being specified. 
+It is mostly used to set up middleware for your application. 
+We know how to use middlewares inside the app.get() / app.post(), but instead of adding the middlewares over there we will 
+register/add the middlewares inside the app.use().
 */
 
 // `npm run dev` -> To start & run the Server.

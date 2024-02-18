@@ -11,3 +11,10 @@ function fun() {
 }
 fun();
 console.log(name);
+
+// Hoisting in JavaScript is a behavior where variable and function 
+// declarations are moved to the top of their containing scope during the compilation phase. 
+// This means that regardless of where variables and functions are declared in the code,
+//  they are conceptually moved to the top of their scope.
+
+

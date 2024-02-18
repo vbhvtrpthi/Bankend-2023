@@ -1,6 +1,9 @@
-//When a promise is resolved or rejected the handlers present inside the onfulfillment and onRejection array are not immediately executed,
-//When the promise state changes and on the basis of fulfillment or rejection, respective handlers move to the microtask queue and wait for the signal from the event loop,
-//event loop as always will check the call stack and global code if nothing is left then it'll start execution callbacks from microtask queue, priority will given to microtask queue over callback(macrotask) queue 
+//When a promise is resolved or rejected the handlers present inside the onfulfillment and onRejection array are not
+// immediately executed,
+//When the promise state changes and on the basis of fulfillment or rejection, 
+// respective handlers move to the microtask queue and wait for the signal from the event loop,
+//event loop as always will check the call stack and global code if nothing is left then it'll start execution
+// callbacks from microtask queue, priority will given to microtask queue over callback(macrotask) queue 
 
 function createPromise() {
     return new Promise(function exec(resolve, reject) {

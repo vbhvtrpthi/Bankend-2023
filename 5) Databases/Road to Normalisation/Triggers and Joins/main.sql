@@ -25,13 +25,15 @@ behaviours.
 
 select * from orderDetails od JOIN products p ON od.productCode = p.productCode; 
 select p.productCode, p.productName from orderDetails od JOIN products p ON od.productCode = p.productCode; 
-select p.productCode, p.productName from orderDetails od JOIN products p ON od.productCode = p.productCode where od.orderNumber ='10101'; 
+select p.productCode, p.productName from orderDetails od JOIN products p ON od.productCode = p.productCode 
+where od.orderNumber ='10101'; 
 
 /*Multiple JOINS: Whatever is the result of the first join will be clubbed together with the second join data*/
 
 select * from orderDetails od JOIN products p ON od.productCode = p.productCode JOIN orders o ON o.orderNumber = od.orderNumber; 
 
-select * from orderDetails od JOIN products p ON od.productCode = p.productCode JOIN orders o ON o.orderNumber = od.orderNumber where od.orderNumber ='10101'; 
+select * from orderDetails od JOIN products p ON od.productCode = p.productCode JOIN orders o ON o.orderNumber = od.orderNumber
+where od.orderNumber ='10101'; 
 
 select o.orderNumber, o.orderDate, p.productCode, p.productName, od.quantityOrdered from orderDetails od 
 JOIN products p ON od.productCode = p.productCode 
@@ -67,7 +69,8 @@ select orderNumber, productCode from orderDetails;
 /* ------------------------------------------------------------------------------------------------------------------------- */
 
 /*
-Can create views from the single table or joins of multiple table it is just a view whcih can be used to query and is used for security reasons.
+Can create views from the single table or joins of multiple table it is just a view which can be used to query and is used
+ for security reasons.
 */
 
 CREATE OR REPLACE VIEW OrderProductView AS 
@@ -81,7 +84,10 @@ select * from OrderProductView;
 
 /*
 Qs. If I update the view, will the data in the original table get updated?
-YES, The data "in" a view has no existence independent from the tables that make up the view. The view is, in essence, a stored SELECT statement that masquerades as a table. The data is stored in the original tables and only "assembled" into the view when you want to look at it. If the view is updateable (not all views are) the updates are applied to the table data.
+YES, The data "in" a view has no existence independent from the tables that make up the view. 
+The view is, in essence, a stored SELECT statement that masquerades as a table. 
+The data is stored in the original tables and only "assembled" into the view when you want to look at it. 
+If the view is updateable (not all views are) the updates are applied to the table data.
 
 Qs. Are views automatically updated when base tables are updated?
 YES, SQL views can update automatically when the underlying tables or data sources are updated.
@@ -156,7 +162,9 @@ is semicolon(;). But now the DELIMITER is changed to a hash(#).
 The below query is a one valid SQL statement:
 `CREATE PROCEDURE showLimitedOrders()
 BEGIN
-     SELECT * FROM ORDERS LIMIT 10; /* If u will not update the DELIMITER to #(hash), the moment u hit the semicolon(;) on this line, it will assume that this was a valid end of SQL statement which is actually not and it will start throwing an error. */
+     SELECT * FROM ORDERS LIMIT 10; /* If u will not update the DELIMITER to #(hash), 
+	 the moment u hit the semicolon(;) on this line, it will assume that this was a valid end of SQL statement which is 
+	 actually not and it will start throwing an error. */
 END #`
 
 DELIMITER ; Atlast updating the DELIMITER back to semicolon(;)

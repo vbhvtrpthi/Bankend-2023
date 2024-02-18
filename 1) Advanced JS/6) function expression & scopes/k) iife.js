@@ -6,7 +6,8 @@ function x() {
 //The moment we define it, then only we call it.
 
 //use case -> In order to avoid name collision.
-//if someone wants to use the same name, as the codebase is very large and they might not know about the declaration of it then can use iife, otherwise using same name function can lead to overriding.
+//if someone wants to use the same name, as the codebase is very large and they might not know about the declaration of it 
+//then can use iife, otherwise using same name function can lead to overriding.
 
 
 (function x(y) {

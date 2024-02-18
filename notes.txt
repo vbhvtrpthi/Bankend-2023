@@ -1,3 +1,11 @@
 -> Every company uses multiple tech stacks
 -> Tech stack should not matter for developers (Concepts are same), ,so take the opportunity and Learn it.
 
+// Plan Matrimony
+// 3 jan
+// complete GRPC, revise it
+// Flight project, get better understandinf revise it
+
+// GRPC
+// https://www.cloudflare.com/learning/performance/http2-vs-http1.1/#:~:text=In%202015%2C%20a%20new%20version,content%20during%20the%20loading%20process.
+//https://medium.com/nerd-for-tech/serialization-deserialization-with-protobufs-223d401f621d#:~:text=As%20per%20the%20Google%20Protobuf,your%20messages%20into%20binary%20format.

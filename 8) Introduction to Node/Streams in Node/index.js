@@ -1,7 +1,8 @@
 import { readFile, writeFile } from 'node:fs/promises';
 
 //objective - reading a file 
-// Create a filePath using an URL object | 1st parameter is your relative path with respect to the current file where index.html is present (`.` means current folder) and the 2nd parameter is the whole file path of the current file that u have to pass
+// Create a filePath using an URL object | 1st parameter is your relative path with respect to the current file 
+// where index.html is present (`.` means current folder) and the 2nd parameter is the whole file path of the current file that u have to pass
 const filePath = new URL("./index.html", import.meta.url);
 
 let contents = await readFile(filePath, { encoding: "utf-8" }); // We can use await here without async since it is a top-level module

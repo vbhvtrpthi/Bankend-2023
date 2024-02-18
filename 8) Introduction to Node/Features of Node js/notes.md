@@ -9,3 +9,5 @@ In order to run your comp m/c need cpu, RAM, h/w  these are `resources` but os g
 
 Why `libuv`?
   In simple terms there can be different architecture and diff implms for the same feature in diff os (ex- In linux reading a file is blocking whereas in windows it's non blocking)
+
+https://www.digitalocean.com/community/tutorials/node-js-architecture-single-threaded-event-loop

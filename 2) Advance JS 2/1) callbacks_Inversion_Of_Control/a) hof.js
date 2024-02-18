@@ -1,6 +1,7 @@
 //higher order function
-// higher order function -> there are functions which take another function as arguments 
+// higher order function -> there are functions which take another function as arguments ex fucntion f
 // these are called higher order functions
+// Functions that are passed as arguments to another function are called "callback functions". ex function exec
 
 function f(x, fn) {
     /**

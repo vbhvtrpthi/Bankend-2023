@@ -44,3 +44,7 @@
 
 # Cookies
 - As server is stateless, but it  want's to know whether the user is logged in or not to show different view to the user here `cookies` are helpful
+
+Use PUT when you want to replace an entire resource or create a new one if it doesn't exist.
+
+Use PATCH when you want to make partial updates to a resource without replacing it entirely, especially for large resources where sending the entire resource is inefficient.

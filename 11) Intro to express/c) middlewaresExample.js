@@ -7,10 +7,13 @@ const app = express(); // Create an Express Server object
 // Middleware 1
 const myLogger = (req, res, next) => {
   console.log("Logging from Middleware 1");
-  // return res.json({ msg: "Done from Middleware 1" }); // -> prints only `Logging from Middleware 1` in the console and displays `{"msg": "Done from Middleware 1"}` in the browser.
-  // Because it returns JSON from the response, it does not forward your request to the next middleware because the next() was never called.
+  // return res.json({ msg: "Done from Middleware 1" }); // -> prints only `Logging from Middleware 1` in the console and displays 
+  // `{"msg": "Done from Middleware 1"}` in the browser.
+  // Because it returns JSON from the response, it does not forward your request to the next middleware because the next() 
+  // was never called.
   // It is important to set the 'return' keyword otherwise it throws an Error: `Can't set headers after they are sent to the client`.
-  next(); // calls the next middleware. If u don't call the next() the request will not be forwarded from one middleware to another middleware.
+  next(); // calls the next middleware. If u don't call the next() the request will not be forwarded from one middleware to another
+          // middleware.
 };
 
 // Middleware 2
