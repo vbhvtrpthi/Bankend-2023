@@ -1,4 +1,5 @@
 //parsing phase,Execution phase
+
 function fun() { // fun -> global scope
     var x = 10; // x -> fun scope
     function gun() { // gun -> fun scope

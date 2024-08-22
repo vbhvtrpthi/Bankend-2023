@@ -1,4 +1,25 @@
-//Run in browser console
+function timeConsumingByLoop() {
+    console.log("loop starts");
+    for (let i = 0; i < 1000000000; i++) {
+        // some task
+    }
+    console.log("loop ends");
+}
+function timeConsumingByRuntimeFeature() {
+    console.log("Starting timer");
+    setTimeout(function exec() {
+        console.log("Completed the timer");
+        for (let i = 0; i < 1000000000; i++) {
+            // some task
+        }
+    }, 5000); // 5 sec timer
+}
+
+console.log("Hi");
+timeConsumingByLoop();
+timeConsumingByRuntimeFeature();
+timeConsumingByLoop();
+console.log("By");//Run in browser console
 
 //setInterval will again and again execute the callback after 1000 millisecond
 //setInterval(function(){console.log("another one")}, 1000)

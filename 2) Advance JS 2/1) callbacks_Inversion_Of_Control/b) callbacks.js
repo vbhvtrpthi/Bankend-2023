@@ -5,7 +5,8 @@
  * fn -> function
  */
 
-//HOF consumes some function as an argument and the function that you pass as an argument while calling the HOF is known as callback function.
+//HOF consumes some function as an argument and the function that you pass as an argument 
+// while calling the HOF is known as callback function.
 
 function fun(x, fn) {
     for (let i = 0; i < x; i++) {

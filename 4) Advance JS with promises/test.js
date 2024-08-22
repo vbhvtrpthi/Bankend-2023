@@ -1,19 +1,27 @@
-function download(url, time) {
-  return new Promise(function exec(resolve, reject) {
-    console.log("Starting to download data from", url);
-    setTimeout(function down() {
-      console.log("Downloading completed");
-      const content = "ABCDEF"; // assume dummy download content
-      if (time > 1000) {
-        reject("err");
-      } else resolve(content);
-    }, time);
-  });
+function getRandomInt(max){
+  return Math.floor(Math.random() * max)
+}
+function createPromiseWithTimeout(){
+  return new Promise(function exec(resolve, reject){
+    setTimeout(() => {
+       let x = getRandomInt(10);
+       if(x % 2 == 0){
+        resolve(x);
+       }else{
+        reject(x);
+       }
+    }, 1000);
+  })
 }
 
-const p1 = download("www.abc1.com", 5000);
-const p2 = download("www.abc2.com", 1000);
-const p3 = download("www.abc3.com", 3000);
-Promise.all([p1, p2, p3]).then(function fullfillHandler(values) {
-  console.log(values);
-});
+let x = createPromiseWithTimeout();
+x.then(
+  function onFulfilled(val){
+    console.log("I am inside onFulfillment fn");
+    console.log(val);
+  },
+  function onReject(val){
+    console.log("I am inside onreject fn");
+    console.log(val);
+  }
+)
